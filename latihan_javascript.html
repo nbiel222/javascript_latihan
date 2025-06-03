@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Latihan javascribe</title>
+    <style></style>    
+</head>
+    <body>
+        <input type="text" id="nama" onkeyup="tampilDataDiv()">
+        <button type="button" onclick="btn_tambahan" id="btn_tampil">Tampil</button>
+        <div id="tampil_data"></div>
+        <br><br>
+        <button value="pink" type="button" onclick="ubahWarnaButton(this.value)">pink</button>
+        <button value="orange" type="button" onclick="ubahWarnaButton(this.value)">orange</button>
+        <button value="yellow" type="button" onclick="ubahWarnaButton(this.value)">yellow</button>
+        <button value="aqua" type="button" onclick="ubahWarnaButton(this.value)">aqua</button>
+        <button value="blue" type="button" onclick="ubahWarnaButton(this.value)">blue</button>
+        <button value="green" type="button" onclick="ubahWarnaButton(this.value)">green</button>
+        <button value="white" type="button" onclick="ubahWarnaButton(this.value)">white</button>
+        <button value="red" type="button" onclick="ubahWarnaButton(this.value)">red</button>
+        <button value="maroon" type="button" onclick="ubahWarnaButton(this.value)">maroon</button>
+        <br><br>
+        <input type="">
+        <br><br>
+        <button type="button" id="btn_tambahan" style="display:none">baru muncul</button>
+        <br><br>
+        <p id=""></p>
+        <button type="button" onclick="document.write(10 + 10)"> hasil </button>
+        <br>
+        <p id="demo">ayam.</p>
+        <br>
+        <button type="button" onclick="document.getElementById('demo').style.display='none'"></button>
+    
+
+
+
+    </body>
+    <script>
+        function nabil()
+        {
+            var nm = document.getElementById("nama").value;
+            alert("Hello, "+nm);
+        }
+        function ubahWarnaButton(warna)
+        {
+            document.getElementById("btn_tampil").style.backgroundColor = warna;
+        }
+
+        function tampilDataDiv()
+        {
+            var data = document.getElementById("nama").value;
+            document.getElementById("tampil_data").innerHTML = data;
+        }
+
+        function munculButton()
+        {
+            if(status == true ){
+               document.getElementById("btn_tambahan").style.display = "inline";
+            }else{
+                 document.getElementById("btn_tambahan").style.display = "none";
+            }
+          }
+
+          function ubahWarnaButton(color) {
+            document.body.style.backgroundColor = color;
+          }
+
+          window.alert(10 + 10 );
+
+
+
+    </script>
+</html>
